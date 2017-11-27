@@ -8,6 +8,7 @@ Flask-SQLAlchemy==2.3.2
 Flask-WTF==0.14.2
 future==0.16.0
 geocoder==1.33.0
+gunicorn==19.7.1
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
