@@ -41,7 +41,8 @@ class Place(object):
         lat, lng = self.address_to_latlng(address)
         query_url = 'https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord={0}%7C{1}&gsradius=5000&gslimit=10&format=json'.format(lat, lng)
         g = urllib.request.urlopen(query_url)
-        results = g.read()
+        charset = g.info().get_content_charset()
+        results = g.read().decode(charset)
         g.close()
         data = json.loads(results)
         places = []
