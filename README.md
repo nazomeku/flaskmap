@@ -1,5 +1,5 @@
 # flaskmap
-Flask application based on tutorial with [live demo](http://p1.nazo.pm/).
+Flask application based on Packt tutorial with [live demo](http://nazo.pm/p1).
 
 Technologies used:
 - Python 3.6
